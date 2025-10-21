@@ -1,147 +1,99 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <title>Jose Tomas Ruiz Vidal | Web Developer</title>
+  <title>Jose Tomas Ruiz Vidal | Software Engineer</title>
 </head>
 <body>
 
-  <header class="main-header">
-    <nav class="main-nav">
-      <a href="#" class="nav-brand">Jose Tomas Ruiz Vidal</a>
-      <ul>
-        <li><a href="#about">Sobre mí</a></li>
-        <li><a href="#projects">Proyectos</a></li>
-        <li><a href="#stack">Stack</a></li>
-        <li><a href="#contact">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- Animated background -->
+  <div class="lines">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
 
   <main>
-    <section id="about" class="hero-section">
-      <div class="hero-content">
-        <img src="images/perfil.jpg" alt="Foto de Jose Tomas Ruiz Vidal" class="profile-image">
-        <div class="hero-text">
-          <h1>Jose Tomas Ruiz Vidal</h1>
-          <h2>Full Stack Web Developer</h2>
-          <p>
-            Soy desarrollador web enfocado en tecnologías como React y JavaScript, con interés en seguir profundizando en el desarrollo full stack a través de Node.js. Mi formación comenzó con un bootcamp especializado, donde adquirí conocimientos en HTML, CSS, JavaScript y bases de datos como PostgreSQL. Inicialmente trabajé con Ruby on Rails, pero hoy mi foco está en el ecosistema de JavaScript.
-            <br><br>
-            Antes de dedicarme a la programación, trabajé en Huawei durante varios años, donde pasé de supervisor de ventas a manager. Esa experiencia me ayudó a desarrollar habilidades clave como el liderazgo, la comunicación efectiva y la gestión de equipos.
-            <br><br>
-            También soy licenciado en Historia por la Pontificia Universidad Católica de Chile, formación que me entregó una base sólida en el análisis crítico y la capacidad de pensar con perspectiva.
-            <br><br>
-            Me interesa crear aplicaciones funcionales, bien estructuradas y trabajar en entornos colaborativos donde pueda seguir aprendiendo y aportando.
-          </p>
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Jose Tomas Ruiz Vidal</h1>
+      <p class="subtitle">Software Engineer</p>
+      <p class="intro">Software Engineer with 2 years of experience in developing digital solutions, including hands-on participation in real-world Artificial Intelligence projects with a focus on RAG, tackling and solving complex technical challenges.</p>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+
+      <div class="experience-item">
+        <div class="experience-header">
+          <h3>Fullstack Developer Internship</h3>
+          <span class="date">2025</span>
         </div>
+        <p class="company">Collaborated with Neahtid Research and Development</p>
+        <ul>
+          <li>Developed and maintained a full-stack application integrating Artificial Intelligence (RAG) to provide insights on financial assets</li>
+          <li>Implemented payment processing with Stripe and push notifications using Firebase</li>
+          <li>Contributed to PWA functionality for offline support and improved performance</li>
+          <li>Built and refined FastAPI endpoints to enhance backend scalability</li>
+          <li>Ensured code quality through CI linting, automated testing, and coverage quality gates</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="experience-header">
+          <h3>Software Engineer - Cardano Ecosystem</h3>
+          <span class="date">2024 - 2025</span>
+        </div>
+        <p class="company">Funded by Cardano Grant</p>
+        <ul>
+          <li>Contributed to adapting the Ethereum-based zero-knowledge application p0tion for the Cardano ecosystem to enable multi-phase ceremony management</li>
+          <li>Developed and maintained both backend (Nest.js) and frontend components, ensuring seamless integration and code consistency</li>
+          <li>Collaborated with a distributed team to adapt and extend functionalities within the Cardano ecosystem, enhancing community tools</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="experience-header">
+          <h3>Freelance Full-Stack Software Developer</h3>
+          <span class="date">2024 - Present</span>
+        </div>
+        <p class="company">Chile</p>
+        <ul>
+          <li>Designed and developed web applications, e-commerce sites, and landing pages for multiple clients</li>
+          <li>Built and deployed a miniapp on Farcaster, integrating social and Web3 features</li>
+          <li>Implemented API integrations with financial data providers to display real-time market information</li>
+          <li>Focused on clean, maintainable code and responsive user interfaces</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="experience-header">
+          <h3>Regional Sales Manager</h3>
+          <span class="date">2021 - 2022</span>
+        </div>
+        <p class="company">Huawei, Chile</p>
+        <ul>
+          <li>Managed retail operations and sales performance across the southern regions of Chile</li>
+          <li>Supervised and trained sales teams, handling hiring, performance evaluation, and staff development</li>
+          <li>Coordinated B2B and B2C initiatives, ensuring consistent brand presence and optimized product placement</li>
+        </ul>
       </div>
     </section>
 
-    <section id="projects" class="projects-section">
-      <h2>Mis Proyectos</h2>
-      <div class="card-container">
-        <article class="card">
-          <img src="images/Arsty.png" alt="Arsty" class="card-image">
-          <div class="card-content">
-            <h4>Arsty</h4>
-            <p>Plataforma con modelo MVC creada con Ruby on Rails, similar a un marketplace donde las personas pueden comprar y vender arte, ya sea amateur o profesional. Esta aplicacion permite adquirir arte en tiempo real, en donde cada usuario puede crear su perfil y empezar a vender o comprar arte.</p>
-            <a href="https://github.com/Xtremono/Artsy" class="card-link" target="_blank">Ver código en Github</a>
-          </div>
-        </article>
-        <article class="card">
-          <img src="images/Buddfit challenge.png" alt="Buddfit challenge" class="card-image">
-          <div class="card-content">
-            <h4>Buddfit challenge</h4>
-            <p>Programa para entrenar con amigos y personas de todo el mundo. Creada con Ruby on Rails, esta aplicación permite subir fotos, dejar comentarios y llevar un registro de tus actividades de manera fácil y entretenida. Ha sido desplegada en la web utilizando Heroku.</p>
-            <a href="https://github.com/Xtremono/budd-fit-challenge" class="card-link" target="_blank">Ver código en Github</a>
-          </div>
-        </article>
-        <article class="card">
-          <img src="images/regex.png" alt="regex-number-validator" class="card-image">
-          <div class="card-content">
-            <h4>Regex number validator</h4>
-            <p>Este programa es un validador simple pero eficaz de números de teléfono de Estados Unidos. Está desarrollado con HTML, CSS y JavaScript, utilizando expresiones regulares para verificar la validez de los números ingresados.¡Siéntete libre de copiarlo y adaptarlo según tus necesidades!</p>
-            <a href="https://xtremono.github.io/regex-number-validator/" class="card-link" target="_blank">Ver proyecto</a>
-          </div>
-        </article>
-        <article class="card">
-          <img src="images/gifApp.png" alt="Random GifApp" class="card-image">
-          <div class="card-content">
-            <h4>Random GifApp</h4>
-            <p>Esta aplicación web permite buscar y explorar GIFs de forma rápida usando la API de Giphy. Desarrollada con React, ofrece una interfaz dinámica y fácil de usar, garantizando una experiencia fluida en cualquier dispositivo para que el usuario tenga un experiencia divertida.</p>
-            <a href="https://random-gifts.netlify.app/" class="card-link" target="_blank">Ver proyecto</a>
-          </div>
-        </article>
-        <article class="card">
-          <img src="images/crypto3.png" alt="Crypto Price Tracker" class="card-image">
-          <div class="card-content">
-            <h4>Crypto Price Tracker</h4>
-            <p>Aplicación web que permite visualizar los precios de criptomonedas en tiempo real. Desarrollada con JavaScript, HTML y CSS, consume una API pública para mostrar datos actualizados y ofrece una interfaz sencilla para seguir tus monedas favoritas.</p>
-            <a href="https://xtremono.github.io/crypto-api/" class="card-link" target="_blank">Ver proyecto</a>
-          </div>
-        </article>
-        <article class="card">
-          <img src="images/palindrome.png" alt="Palindrome Checker" class="card-image">
-          <div class="card-content">
-            <h4>Palindrome Checker</h4>
-            <p>Un divertido juego interactivo desarrollado con JavaScript, HTML y CSS que permite a los usuarios verificar si una palabra o frase es un palíndromo. Ideal para practicar lógica de programación y manipulación de cadenas de texto.</p>
-            <a href="https://xtremono.github.io/palindrome/" class="card-link" target="_blank">Ver proyecto</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="stack" class="stack-section">
-      <h2>Stack Tecnológico</h2>
-      <div class="tech-stack">
-        <div class="tech-card">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Ruby_logo.png/899px-Ruby_logo.png" alt="Ruby" class="tech-image">
-          <p>Ruby</p>
-        </div>
-        <div class="tech-card">
-          <img src="https://www.svgrepo.com/show/376345/rails.svg" alt="Ruby on Rails" class="tech-image">
-          <p>Ruby on Rails</p>
-        </div>
-        <div class="tech-card">
-          <img src="images/html-5.png" alt="HTML" class="tech-image">
-          <p>HTML</p>
-        </div>
-        <div class="tech-card">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="CSS" class="tech-image">
-          <p>CSS</p>
-        </div>
-        <div class="tech-card">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" class="tech-image">
-          <p>JavaScript</p>
-        </div>
-        <div class="tech-card">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg" alt="React" class="tech-image">
-          <p>React</p>
-        </div>
-        <div class="tech-card">
-          <img src="https://w7.pngwing.com/pngs/804/269/png-transparent-bootstrap-hd-logo-thumbnail.png" alt="Bootstrap" class="tech-image">
-          <p>Bootstrap</p>
-        </div>
-        <div class="tech-card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfHAL9lwC3v52oaow4glc74V_u068ns3h2tg&s" alt="SQL" class="tech-image">
-          <p>SQL</p>
-        </div>
-        <div class="tech-card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZSOIj7rDvRcVKV8OcU_CAlJesGK_cxk9FSw&s" alt="PostgreSQL" class="tech-image">
-          <p>PostgreSQL</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-      <h2>Contacto</h2>
-      <p>Si te interesa mi perfil, no dudes en contactarme.</p>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p class="contact-text">Let's connect</p>
       <div class="social-links">
         <a href="https://github.com/Xtremono" target="_blank">GitHub</a>
         <a href="https://www.linkedin.com/in/jose-tomas-ruiz/" target="_blank">LinkedIn</a>
@@ -149,10 +101,8 @@
     </section>
   </main>
 
-  <footer class="main-footer-container">
-    <div class="footer-content">
-      <p>© 2024 Jose Tomas Ruiz Vidal. Todos los derechos reservados.</p>
-    </div>
+  <footer>
+    <p>© 2025 Jose Tomas Ruiz Vidal</p>
   </footer>
 
 </body>
