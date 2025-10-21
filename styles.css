@@ -64,59 +64,75 @@ body {
 }
 
 .line:nth-child(1) {
-  left: 10%;
+  left: 5%;
 }
 
 .line:nth-child(1)::after {
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
 
 .line:nth-child(2) {
-  left: 25%;
+  left: 10%;
 }
 
 .line:nth-child(2)::after {
-  animation-delay: 0.5s;
+  animation-delay: 2s;
 }
 
 .line:nth-child(3) {
-  left: 40%;
+  left: 25%;
 }
 
 .line:nth-child(3)::after {
-  animation-delay: 3s;
+  animation-delay: 0.5s;
 }
 
 .line:nth-child(4) {
-  left: 50%;
+  left: 40%;
 }
 
 .line:nth-child(4)::after {
-  animation-delay: 0s;
+  animation-delay: 3s;
 }
 
 .line:nth-child(5) {
-  left: 60%;
+  left: 50%;
 }
 
 .line:nth-child(5)::after {
-  animation-delay: 2.5s;
+  animation-delay: 0s;
 }
 
 .line:nth-child(6) {
-  left: 75%;
+  left: 60%;
 }
 
 .line:nth-child(6)::after {
-  animation-delay: 1.5s;
+  animation-delay: 2.5s;
 }
 
 .line:nth-child(7) {
-  left: 90%;
+  left: 75%;
 }
 
 .line:nth-child(7)::after {
+  animation-delay: 1.5s;
+}
+
+.line:nth-child(8) {
+  left: 90%;
+}
+
+.line:nth-child(8)::after {
   animation-delay: 3.5s;
+}
+
+.line:nth-child(9) {
+  left: 95%;
+}
+
+.line:nth-child(9)::after {
+  animation-delay: 4s;
 }
 
 @keyframes drop {
@@ -132,13 +148,6 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .line::after {
     animation: none;
-  }
-}
-
-/* Disable animation on mobile for performance */
-@media (max-width: 768px) {
-  .line::after {
-    display: none;
   }
 }
 
